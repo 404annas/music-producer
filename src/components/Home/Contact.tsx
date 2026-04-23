@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 interface FormData {
   name: string;
@@ -31,8 +32,13 @@ const Contact: React.FC = () => {
   return (
     <section className="text-white px-4 md:px-6 pb-6 relative z-20">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-end mb-10 border-b border-white/10 pb-6">
+        <div className="flex justify-between items-center mb-10 border-b border-white/10 pb-6">
           <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">Contact Me</h2>
+          <div className='flex items-center gap-2'>
+          <p className='bg-gradient-to-r from-purple-500 to-pink-700 p-4 rounded-full cursor-pointer text-white hover:-translate-y-1 transition-all duration-300'><FaInstagram size={20}/></p>
+          <p className='bg-gradient-to-r from-blue-500 to-blue-700 p-4 rounded-full cursor-pointer text-white hover:-translate-y-1 transition-all duration-300'><FaFacebook size={20}/></p>
+          <p className='bg-gradient-to-r from-red-500 to-red-700 p-4 rounded-full cursor-pointer text-white hover:-translate-y-1 transition-all duration-300'><FaYoutube size={20}/></p>
+          </div>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-10">

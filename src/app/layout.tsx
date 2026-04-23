@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/common/Navbar";
 import { cn } from "@/lib/utils";
 import BlobCursor from "@/components/BlobCursor";
+import Footer from "@/common/Footer";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -52,6 +53,7 @@ export default function RootLayout({
           zIndex={10}
         />
         {children}
+        <Footer />
       </body>
 
     </html>
