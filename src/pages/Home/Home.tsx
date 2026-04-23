@@ -1,4 +1,5 @@
 import About from '@/components/Home/About'
+import BestSongs from '@/components/Home/BestSongs'
 import Contact from '@/components/Home/Contact'
 import Hero from '@/components/Home/Hero'
 import Projects from '@/components/Home/Projects'
@@ -11,6 +12,7 @@ const Home = () => {
         <About />
         <Projects />
         <Scroller />
+        <BestSongs />
         <Contact />
     </div>
   )
