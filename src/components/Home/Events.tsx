@@ -33,7 +33,7 @@ const eventData = [
 ];
 
 const Events: React.FC = () => {
-  const scrollText = "UPCOMING TOURS * UPCOMING TOURS * UPCOMING TOURS * UPCOMING TOURS * "
+  const scrollText = "UPCOMING TOURS * UPCOMING EVENTS * UPCOMING PROJECTS * UPCOMING SHOWS * "
 
   return (
     <section className="relative z-20 pb-20 text-white w-full overflow-hidden">
@@ -122,7 +122,7 @@ const EventCard = ({ event, index }: { event: typeof eventData[0], index: number
         `}
         style={{ transform: 'translate(-50%, -50%)' }} // Keep it centered on cursor
       >
-        <div className="bg-white/20 backdrop-blur-xl text-white border border-white/30 px-6 py-3 rounded-md text-[10px] font-black uppercase tracking-[0.2em] shadow-2xl">
+        <div className="bg-white/20 backdrop-blur-xl text-white border border-white/30 px-6 py-3 rounded-md text-[10px] font-black uppercase tracking-wider shadow-2xl">
           View Event
         </div>
       </div>
