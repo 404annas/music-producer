@@ -1,5 +1,5 @@
 "use client"
-import React, { useLayoutEffect, useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
@@ -26,11 +26,11 @@ const Scroller = () => {
       })
 
       // Row 1 slides Left
-      tl.to(row1.current, { x: -200 }, 0)
+      tl.to(row1.current, { x: -250 }, 0)
       // Row 2 slides Right
-      tl.to(row2.current, { x: 200 }, 0)
+      tl.to(row2.current, { x: 250 }, 0)
       // Row 3 slides Left
-      tl.to(row3.current, { x: -200 }, 0)
+      tl.to(row3.current, { x: -250 }, 0)
     })
 
     return () => ctx.revert()
@@ -58,7 +58,7 @@ const Scroller = () => {
       <div className="whitespace-nowrap flex relative z-20">
         <h2 
           ref={row2} 
-          className="text-black text-[12vw] md:text-[10vw] font-black uppercase leading-none tracking-tighter -ml-[500px]"
+          className="text-black text-[12vw] md:text-[10vw] font-black uppercase leading-none tracking-tighter -ml-[1200px]"
         >
           {text}
         </h2>

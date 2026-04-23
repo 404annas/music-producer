@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import aboutImg from "@/assets/refAbout.png" // Replace with your image path
 
