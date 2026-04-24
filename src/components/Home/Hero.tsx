@@ -18,8 +18,8 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black/50 z-10"></div>
       </div>
 
-      {/* Navbar inside Hero - z-20 to stay in front of BlobCursor */}
-      <div className="relative z-20 w-full">
+      {/* Navbar inside Hero - z-30 to stay in front of other hero content and BlobCursor */}
+      <div className="relative z-30 w-full">
         <Navbar />
       </div>
 
