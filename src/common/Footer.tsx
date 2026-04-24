@@ -43,10 +43,10 @@ const Footer: React.FC = () => {
               priority
               width={500}
               height={100}
-              className="w-auto h-15"
+              className="w-auto h-10 md:h-15"
             />
           </Link>{" "}
-          <p className="text-[#AFD8FF] text-2xl md:text-2xl font-bold uppercase tracking-tight leading-[1.1] max-w-md md:text-right">
+          <p className="text-[#AFD8FF] text-base sm:text-lg md:text-xl lg:text-2xl font-bold uppercase tracking-tight leading-[1.1] max-w-md md:text-right">
             WE TURN RAW SOUND INTO UNFORGETTABLE EXPERIENCES
           </p>
         </div>
@@ -55,14 +55,14 @@ const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-10 py-10 border-y border-white/10">
           {/* Newsletter Column - Left Side */}
           <div className="max-w-md w-full">
-            <h4 className="text-sm font-bold uppercase tracking-wider mb-4">
+            <h4 className="text-sm font-bold uppercase tracking-wide mb-4">
               Subscribe to our newsletter
             </h4>
             <div className="flex bg-white rounded-lg p-1">
               <input
                 type="email"
                 placeholder="Email*"
-                className="bg-transparent text-black px-4 py-3 flex-grow outline-none font-medium placeholder:text-gray-400"
+                className="bg-transparent text-black px-4 py-3 flex-grow outline-none font-medium placeholder:text-gray-400 text-sm md:text-base"
               />
               <button className="bg-white border border-gray-200 text-black p-3 rounded-md hover:bg-gray-100 transition-colors duration-300 cursor-pointer">
                 <ArrowRight size={20} strokeWidth={3} />
@@ -78,29 +78,29 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Nav Links Column - Right Side */}
-          <div className="flex flex-wrap text-right gap-8 md:gap-10">
-            <div className="flex flex-row gap-6">
+          <div className="flex flex-wrap text-right gap-4 sm:gap-8 md:gap-10">
+            <div className="flex flex-row gap-4 md:gap-6">
               <Link
                 href="/about"
-                className="font-black text-base uppercase tracking-tight hover:text-[#AFD8FF] transition-all duration-300"
+                className="font-black text-xs md:text-base uppercase tracking-tight hover:text-[#AFD8FF] transition-all duration-300"
               >
                 About Us
               </Link>
               <Link
                 href="/tours"
-                className="font-black text-base uppercase tracking-tight hover:text-[#AFD8FF] transition-all duration-300"
+                className="font-black text-xs md:text-base uppercase tracking-tight hover:text-[#AFD8FF] transition-all duration-300"
               >
                 Our Tours
               </Link>
               <Link
                 href="/media"
-                className="font-black text-base uppercase tracking-tight hover:text-[#AFD8FF] transition-all duration-300"
+                className="font-black text-xs md:text-base uppercase tracking-tight hover:text-[#AFD8FF] transition-all duration-300"
               >
                 Media Kit
               </Link>
               <Link
                 href="/partners"
-                className="font-black text-base uppercase tracking-tight hover:text-[#AFD8FF] transition-all duration-300"
+                className="font-black text-xs md:text-base uppercase tracking-tight hover:text-[#AFD8FF] transition-all duration-300"
               >
                 Albums
               </Link>
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* BOTTOM SECTION: Copyright and Socials */}
-        <div className="flex flex-col md:flex-row justify-between items-center mt-4 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-center mt-4 gap-4 md:gap-6">
           <p className="text-[10px] uppercase tracking-widest text-gray-500 order-3 md:order-1">
             Copyright © Playza 2026
           </p>
