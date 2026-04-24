@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
 
       {/* Middle Content: Paragraph - z-20 to stay in front of BlobCursor */}
-      <div className="relative z-20 flex-grow flex flex-col justify-center items-center px-6 text-center max-w-4xl mt-50 sm:mt-60 md:mt-50 lg:mt-40">
+      <div className="relative z-20 flex-grow flex flex-col justify-center items-center px-6 text-center max-w-4xl mt-70 sm:mt-60 md:mt-50 lg:mt-40">
         <p className="text-white font-mono text-sm md:text-base leading-normal opacity-90">
           Built on raw energy and unapologetic truth, we make music that <br className="hidden md:block" />
           shakes you awake and reminds you how real sound should feel.
