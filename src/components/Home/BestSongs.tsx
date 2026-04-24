@@ -90,10 +90,10 @@ const BestSongs: React.FC = () => {
 
       {/* GROUP 1: Two Images (Side by Side) */}
       <div ref={group1} className="absolute inset-0 z-10 flex items-center justify-between px-10 pointer-events-none">
-        <div className="w-[20%] pointer-events-auto mt-10">
+        <div className="sm:w-[30%] md:w-[20%] pointer-events-auto mt-10">
           <SongCard song={songs[0]} cardStyle={cardStyle} />
         </div>
-        <div className="w-[20%] pointer-events-auto -mt-40">
+        <div className="sm:w-[30%] md:w-[20%] pointer-events-auto -mt-40">
           <SongCard song={songs[1]} cardStyle={cardStyle} />
         </div>
       </div>
@@ -107,13 +107,13 @@ const BestSongs: React.FC = () => {
 
       {/* GROUP 3: Final Three (Settles in Center) */}
       <div ref={group3} className="absolute inset-0 z-30 flex items-center justify-center gap-12 px-10 pointer-events-none">
-        <div className="w-[20%] pointer-events-auto scale-90 opacity-80">
+        <div className="sm:w-[30%] md:w-[20%] pointer-events-auto scale-90 opacity-80">
           <SongCard song={songs[5]} cardStyle={cardStyle} />
         </div>
-        <div className="w-[25%] pointer-events-auto scale-110 z-50">
+        <div className="sm:w-[40%] md:w-[25%] pointer-events-auto scale-110 z-50">
           <SongCard song={songs[6]} cardStyle={cardStyle} />
         </div>
-        <div className="w-[20%] pointer-events-auto scale-90 opacity-80">
+        <div className="sm:w-[30%] md:w-[20%] pointer-events-auto scale-90 opacity-80">
           <SongCard song={songs[7]} cardStyle={cardStyle} />
         </div>
       </div>
@@ -135,7 +135,7 @@ const SongCard = ({ song, cardStyle }: { song: Song, cardStyle: string }) => (
       <div className="absolute inset-0 bg-[#AFD8FF]/0 group-hover:bg-[#AFD8FF]/10 transition-colors duration-700"></div>
     </div>
     <div className="flex justify-between items-center px-1">
-      <p className="text-[11px] font-black uppercase text-white tracking-wider">{song.title}</p>
+      <p className="text-[11px] font-black uppercase leading-none text-white tracking-wider">{song.title}</p>
       <p className="text-[11px] font-bold text-[#AFD8FF]">{song.year}</p>
     </div>
   </div>

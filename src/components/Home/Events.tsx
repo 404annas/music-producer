@@ -88,12 +88,12 @@ const EventCard = ({ event, index }: { event: typeof eventData[0], index: number
       ref={cardRef}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative flex items-center justify-between p-8 md:p-12 border-white/10 group cursor-none overflow-hidden
+      className={`relative flex items-center justify-between p-8 md:p-10 lg:p-12 border-white/10 group cursor-none overflow-hidden
         ${index % 2 !== 0 ? 'md:border-l' : ''} 
         ${index > 1 ? 'border-t' : ''}`}
     >
       {/* Content Side */}
-      <div className="flex flex-col gap-6 max-w-[50%] z-10">
+      <div className="flex flex-col gap-4 lg:gap-6 max-w-[50%] z-10">
         <h3 className="text-xl md:text-2xl font-black uppercase tracking-tighter leading-none group-hover:text-[#AFD8FF] transition-colors duration-500">
           {event.title}
         </h3>

@@ -39,7 +39,7 @@ const Scroller = () => {
   return (
     <section 
       ref={containerRef}
-      className="relative py-10 my-10 overflow-hidden flex flex-col gap-4 select-none min-h-[400px] justify-center"
+      className="relative  py-10 my-10 overflow-hidden flex flex-col gap-4 select-none sm:min-h-[350px] md:min-h-[400px] justify-center"
     >
       {/* Background Layer - z-0 to stay behind BlobCursor (z-10) */}
       <div className="absolute inset-0 bg-[#AFD8FF] z-0"></div>
