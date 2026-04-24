@@ -33,11 +33,11 @@ const Contact: React.FC = () => {
     <section className="text-white px-4 md:px-6 pb-6 relative z-20">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-10 border-b border-white/10 pb-6">
-          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">Contact Me</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter">Contact Me</h2>
           <div className='flex items-center gap-2'>
-          <p className='bg-gradient-to-r from-purple-500 to-pink-700 p-4 rounded-full cursor-pointer text-white hover:-translate-y-1 transition-all duration-300'><FaInstagram size={20}/></p>
-          <p className='bg-gradient-to-r from-blue-500 to-blue-700 p-4 rounded-full cursor-pointer text-white hover:-translate-y-1 transition-all duration-300'><FaFacebook size={20}/></p>
-          <p className='bg-gradient-to-r from-red-500 to-red-700 p-4 rounded-full cursor-pointer text-white hover:-translate-y-1 transition-all duration-300'><FaYoutube size={20}/></p>
+          <p className='bg-gradient-to-r from-purple-500 to-pink-700 p-3 md:p-4 rounded-full cursor-pointer text-white hover:-translate-y-1 transition-all duration-300'><FaInstagram size={20}/></p>
+          <p className='bg-gradient-to-r from-blue-500 to-blue-700 p-3 md:p-4 rounded-full cursor-pointer text-white hover:-translate-y-1 transition-all duration-300'><FaFacebook size={20}/></p>
+          <p className='bg-gradient-to-r from-red-500 to-red-700 p-3 md:p-4 rounded-full cursor-pointer text-white hover:-translate-y-1 transition-all duration-300'><FaYoutube size={20}/></p>
           </div>
         </div>
 
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-center gap-10">
-            <p className="text-sm font-bold uppercase tracking-wide text-[#ffffff]">
+            <p className="text-xs md:text-sm font-bold uppercase leading-none tracking-wide text-[#ffffff]">
               {status === 'success' ? "✓ Message Sent Successfully! We'll get back to you soon." : "Let's create something fabulous together."}
             </p>
 

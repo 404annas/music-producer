@@ -88,7 +88,7 @@ const EventCard = ({ event, index }: { event: typeof eventData[0], index: number
       ref={cardRef}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative flex items-center justify-between p-8 md:p-10 lg:p-12 border-white/10 group cursor-none overflow-hidden
+      className={`relative flex items-center justify-between p-4 md:p-10 lg:p-12 border-white/10 group cursor-none overflow-hidden
         ${index % 2 !== 0 ? 'md:border-l' : ''} 
         ${index > 1 ? 'border-t' : ''}`}
     >

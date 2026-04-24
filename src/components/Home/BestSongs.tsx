@@ -83,31 +83,40 @@ const BestSongs: React.FC = () => {
       {/* Background Text - Starts Clear */}
       <h1 
         ref={titleRef}
-        className="absolute z-0 text-[#AFD8FF] text-[12vw] font-black tracking-tighter leading-none select-none text-center"
+        className="absolute z-0 text-[#AFD8FF] text-[13vw] md:text-[12vw] font-black tracking-tighter leading-none select-none text-center"
       >
         My Best Songs
       </h1>
 
       {/* GROUP 1: Two Images (Side by Side) */}
-      <div ref={group1} className="absolute inset-0 z-10 flex items-center justify-between px-10 pointer-events-none">
-        <div className="sm:w-[30%] md:w-[20%] pointer-events-auto mt-10">
+      <div ref={group1} className="absolute inset-0 z-10 flex items-center justify-between px-4 md:px-10 pointer-events-none">
+        <div className="w-[45%] sm:w-[30%] md:w-[20%] pointer-events-auto mt-10">
           <SongCard song={songs[0]} cardStyle={cardStyle} />
         </div>
-        <div className="sm:w-[30%] md:w-[20%] pointer-events-auto -mt-40">
+        <div className="w-[45%] sm:w-[30%] md:w-[20%] pointer-events-auto -mt-40">
           <SongCard song={songs[1]} cardStyle={cardStyle} />
         </div>
       </div>
 
       {/* GROUP 2: Three Images (Staggered Grid) */}
-      <div ref={group2} className="absolute inset-0 z-20 grid grid-cols-3 gap-10 items-center px-20 pointer-events-none">
-        <div className="pointer-events-auto mt-20"><SongCard song={songs[2]} cardStyle={cardStyle} /></div>
-        <div className="pointer-events-auto -mt-32"><SongCard song={songs[3]} cardStyle={cardStyle} /></div>
-        <div className="pointer-events-auto mt-48"><SongCard song={songs[4]} cardStyle={cardStyle} /></div>
+      <div 
+        ref={group2} 
+        className="absolute inset-0 z-20 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10 items-center px-4 md:px-20 pointer-events-none"
+      >
+        <div className="pointer-events-auto mt-10 md:mt-20">
+          <SongCard song={songs[2]} cardStyle={cardStyle} />
+        </div>
+        <div className="pointer-events-auto md:block hidden -mt-20 md:-mt-32">
+          <SongCard song={songs[3]} cardStyle={cardStyle} />
+        </div>
+        <div className="pointer-events-auto mt-24 md:mt-48">
+          <SongCard song={songs[4]} cardStyle={cardStyle} />
+        </div>
       </div>
 
       {/* GROUP 3: Final Three (Settles in Center) */}
-      <div ref={group3} className="absolute inset-0 z-30 flex items-center justify-center gap-12 px-10 pointer-events-none">
-        <div className="sm:w-[30%] md:w-[20%] pointer-events-auto scale-90 opacity-80">
+      <div ref={group3} className="absolute inset-0 z-30 flex items-center justify-center gap-6 md:gap-12 px-8 md:px-10 pointer-events-none">
+        <div className="md:block hidden sm:w-[30%] md:w-[20%] pointer-events-auto scale-90 opacity-80">
           <SongCard song={songs[5]} cardStyle={cardStyle} />
         </div>
         <div className="sm:w-[40%] md:w-[25%] pointer-events-auto scale-110 z-50">
@@ -134,8 +143,8 @@ const SongCard = ({ song, cardStyle }: { song: Song, cardStyle: string }) => (
       {/* Optional blue glow on hover */}
       <div className="absolute inset-0 bg-[#AFD8FF]/0 group-hover:bg-[#AFD8FF]/10 transition-colors duration-700"></div>
     </div>
-    <div className="flex justify-between items-center px-1">
-      <p className="text-[11px] font-black uppercase leading-none text-white tracking-wider">{song.title}</p>
+    <div className="flex md:flex-row flex-col justify-between md:items-center px-1">
+      <p className="text-[10px] md:text-[11px] font-black uppercase leading-none text-white tracking-wider">{song.title}</p>
       <p className="text-[11px] font-bold text-[#AFD8FF]">{song.year}</p>
     </div>
   </div>
