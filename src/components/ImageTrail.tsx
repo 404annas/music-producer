@@ -1125,7 +1125,7 @@ class ImageTrailVariant8 {
     this.zValue = 0;
     this.cachedZValue = 0;
 
-    const handlePointerMove = (ev: MouseEvent | TouchMove) => {
+    const handlePointerMove = (ev: MouseEvent | TouchEvent) => {
       const rect = container.getBoundingClientRect();
       const clientX = 'clientX' in ev ? ev.clientX : ev.touches[0].clientX;
       const clientY = 'clientY' in ev ? ev.clientY : ev.touches[0].clientY;
